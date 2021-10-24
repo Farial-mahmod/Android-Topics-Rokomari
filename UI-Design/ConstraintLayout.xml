@@ -1,0 +1,80 @@
+<!--
+ConstraintLayout is a viewgroup that allows to position & size widgets with flexibility in terms of visibility, positioning, dimensions , margins & chains.
+Chains are a specific kind of constraint which allow us to share space between the views within the chain and control how the available space is divided between them.     
+       -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+            
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Middle"
+        android:textColor="@color/black"
+            
+        app:layout_constraintLeft_toRightOf="@id/left"
+        app:layout_constraintTop_toTopOf="@id/right"
+        />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+            
+        app:layout_constraintBottom_toBottomOf="@+id/middle"
+        app:layout_constraintLeft_toRightOf="@id/middle"
+        />
+  
+    <Button
+        android:id="@+id/bias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bias"
+        android:textColor="@color/teal_200"
+            
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintLeft_toRightOf="@+id/right"
+        app:layout_constraintBottom_toBottomOf="@id/right"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgbtn"
+            android:src="@mipmap/ic_launcher"
+
+            android:minWidth="5dp"
+            android:maxWidth="35dp"
+            android:minHeight="7dp"
+            android:maxHeight="35dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
