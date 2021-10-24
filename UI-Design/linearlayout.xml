@@ -1,9 +1,9 @@
-/*
-a LinearLayout is a viewgroup that sets its children views in one single direction - either vertically or horizontally .
+<!--
+A LinearLayout is a viewgroup that sets its children views in one single direction - either vertically or horizontally .
 android:orientation to specify direction.
 android:layout_weight gives importance to a view in terms of space.
 Equal Distribution: android:layout_height="0dp" (vertical) or android:layout_width="0dp" (horizontal) .
-*/
+-->
 
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
