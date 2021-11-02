@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Upload"
+            android:id="@+id/btnSelect"
+            android:onClick="selectImage"
+            android:layout_marginTop="17dp"
+           />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:id="@+id/imageView"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btnUpload"
+            android:backgroundTint="@color/teal_200"
+            android:onClick="uploadImage"
+            android:layout_gravity="center"
+            android:layout_marginTop="31dp"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retrieve"
+            android:id="@+id/button"
+            android:onClick="retImage"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/teal_700"
+            android:layout_gravity="center"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="11dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
