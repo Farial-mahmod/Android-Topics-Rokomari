@@ -3,3 +3,9 @@
   implementation platform('com.google.firebase:firebase-bom:29.0.0')
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'com.google.firebase:firebase-analytics'
+    
+    
+ // insert these two into plugins{} section
+    
+   id 'com.google.gms.google-services'
+   id 'com.google.firebase.crashlytics'
