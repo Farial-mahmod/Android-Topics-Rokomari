@@ -1,0 +1,3 @@
+// other declarations as usual
+
+classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'
