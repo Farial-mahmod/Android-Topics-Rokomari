@@ -24,7 +24,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // To get notified when the map is ready to be used.
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -44,9 +44,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Dhaka and move the camera
+        // Add a marker in Sydney and move the camera
         LatLng dhaka = new LatLng(23.8, 90.41);
         mMap.addMarker(new MarkerOptions().position(dhaka).title("showing Dhaka"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(dhaka));
-    }
+
+        LatLng J = new LatLng(23, 89.41);
+        mMap.addMarker(new MarkerOptions().position(J).title("showing Khulna"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(J));
+    } 
 }
