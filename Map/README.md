@@ -1,4 +1,6 @@
-# Instructions
+# Showing Several Marker Locations in Google Map Android
+
+## Instructions to run
 
 1. To start, click New Project > Google Maps Activity and choose Java as language 
 
