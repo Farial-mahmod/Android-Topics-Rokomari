@@ -1,4 +1,4 @@
-# QR Code Scanner
+# QR & Barcode Scanner
 ## native Android app using Java
 
 ### Instructions to run:
