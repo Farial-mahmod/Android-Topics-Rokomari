@@ -1,2 +1,3 @@
-# Android-Topics-Sample
-Contains sample Android code in Java &amp; XML .
+# Android-Topics-Rokomari
+
+Contains Android projects built in Java &amp; XML .
